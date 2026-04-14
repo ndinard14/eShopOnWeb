@@ -5,8 +5,8 @@ on: workflow_dispatch
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
- RESOURCE-GROUP: rg-eshoponweb-westeurope
-  LOCATION: westeurope
+ RESOURCE-GROUP: RESOURCE-GROUP: rg-eshoponweb-eastus
+  LOCATION: eastus
   TEMPLATE-FILE: infra/webapp.bicep
   SUBSCRIPTION-ID:SUBSCRIPTION_ID=$(az account show --query id --output tsv) 
 echo $SUBSCRIPTION_ID
